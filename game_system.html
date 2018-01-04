@@ -3,32 +3,36 @@
 <head>
   <title>Grayscale 개발 일지</title>
   <meta charset="utf-8"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <p><a href="index.html">
-    <img src="images/graphic_image.png" width="20%">
-  </a></p>
-  <ol>
-    <li><a href="game_concepts.html">게임 컨셉</a></li>
-    <li><a href="game_system.html">게임 시스템</a></li>
-    <li><a href="object_definitions.html">오브젝트 정의</a></li>
-    <li><a href="item_list.html">아이템 목록</a></li>
-    <li><a href="character_list.html">캐릭터 목록</a></li>
-    <li><a href="attack_list.html">시스템 공격 목록</a></li>
-    <li><a href="log.html">개발 로그</a></li>
-    <li><a href="test.html">테스트</a></li>
-  </ol>
-  <hr>
-  <h3>점수 체계</h3>
-  <ul>
-    <li>기본 데이터 획득 점수: 1개당 10점</li>
-    <li>기본 시간 점수: 1초당 2점</li>
-    <li>시간 10초 소요시마다 점수 1.3배 가중.</li>
-    <ul>
-      <li>1분 경과 시 점수 약 4.8배</li>
-      <li>2분 경과 시 점수 약 23.3배</li>
-    </ul>
-  </ul>
+  <h1 id="title"><a href="index.html">Grayscale 개발 일지</a></h1>
+  <div id="grid">
+    <div class="nav">
+      <ol>
+        <li><a href="game_concepts.html">게임 컨셉</a></li>
+        <li><a href="game_system.html">게임 시스템</a></li>
+        <li><a href="object_definitions.html">오브젝트 정의</a></li>
+        <li><a href="item_list.html">아이템 목록</a></li>
+        <li><a href="character_list.html">캐릭터 목록</a></li>
+        <li><a href="attack_list.html">시스템 공격 목록</a></li>
+        <li><a href="log.html">개발 로그</a></li>
+        <li><a href="test.html">테스트</a></li>
+      </ol>
+    </div>
+    <div class="article">
+      <h3>점수 체계</h3>
+      <ul>
+        <li>기본 데이터 획득 점수: 1개당 10점</li>
+        <li>기본 시간 점수: 1초당 2점</li>
+        <li>시간 10초 소요시마다 점수 1.3배 가중.</li>
+        <ul>
+          <li>1분 경과 시 점수 약 4.8배</li>
+          <li>2분 경과 시 점수 약 23.3배</li>
+        </ul>
+      </ul>
+    </div>
+  </div>
 
 
   <div id="disqus_thread"></div>

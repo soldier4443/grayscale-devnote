@@ -3,41 +3,44 @@
 <head>
   <title>Grayscale 개발 일지</title>
   <meta charset="utf-8"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <p><a href="index.html">
-    <img src="images/graphic_image.png" width="20%">
-  </a></p>
-  <ol>
-    <li><a href="game_concepts.html">게임 컨셉</a></li>
-    <li><a href="game_system.html">게임 시스템</a></li>
-    <li><a href="object_definitions.html">오브젝트 정의</a></li>
-    <li><a href="item_list.html">아이템 목록</a></li>
-    <li><a href="character_list.html">캐릭터 목록</a></li>
-    <li><a href="attack_list.html">시스템 공격 목록</a></li>
-    <li><a href="log.html">개발 로그</a></li>
-    <li><a href="test.html">테스트</a></li>
-  </ol>
-  <hr>
+  <h1 id="title"><a href="index.html">Grayscale 개발 일지</a></h1>
+  <div id="grid">
+    <div class="nav">
+      <ol>
+        <li><a href="game_concepts.html">게임 컨셉</a></li>
+        <li><a href="game_system.html">게임 시스템</a></li>
+        <li><a href="object_definitions.html">오브젝트 정의</a></li>
+        <li><a href="item_list.html">아이템 목록</a></li>
+        <li><a href="character_list.html">캐릭터 목록</a></li>
+        <li><a href="attack_list.html">시스템 공격 목록</a></li>
+        <li><a href="log.html">개발 로그</a></li>
+        <li><a href="test.html">테스트</a></li>
+      </ol>
+    </div>
+    <div class="article">
+      <h4>TODO LIST</h4>
+      <ul>
+        <li>점수 배율 표시 텍스트 추가</li>
+        <li>DATA 0 이하로 내려갔을 때 GAMEOVER</li>
+        <li>PAUSE를 했을 때 오브젝트도 멈추도록 설정</li>
+      </ul>
 
-  <h4>TODO LIST</h4>
-  <ul>
-    <li>점수 배율 표시 텍스트 추가</li>
-    <li>DATA 0 이하로 내려갔을 때 GAMEOVER</li>
-    <li>PAUSE를 했을 때 오브젝트도 멈추도록 설정</li>
-  </ul>
-
-  <h4>2018-01-03</h4>
-  <ul>
-  <li><b>알파 테스트 릴리즈 0.03v 출시</b></li>
-    <li>개발 일지 사이트 개설</li>
-    <li>DATA 파괴 시 애니메이션 및 효과음 추가</li>
-    <li>VACCINE 파괴 시 애니메이션 및 효과음 추가</li>
-    <li>오브젝트 생성 위치 수정</li>
-    <li>시간 텍스트 추가</li>
-    <li>데이터 카운트 텍스트 추가</li>
-    <li>데이터가 깎일 때 화면 흔들림 효과 추가</li>
-  </ul>
+      <h4>2018-01-03</h4>
+      <ul>
+      <li><b>알파 테스트 릴리즈 0.03v 출시</b></li>
+        <li>개발 일지 사이트 개설</li>
+        <li>DATA 파괴 시 애니메이션 및 효과음 추가</li>
+        <li>VACCINE 파괴 시 애니메이션 및 효과음 추가</li>
+        <li>오브젝트 생성 위치 수정</li>
+        <li>시간 텍스트 추가</li>
+        <li>데이터 카운트 텍스트 추가</li>
+        <li>데이터가 깎일 때 화면 흔들림 효과 추가</li>
+      </ul>
+    </div>
+  </div>
 
 
   <div id="disqus_thread"></div>

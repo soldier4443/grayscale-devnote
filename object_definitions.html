@@ -3,53 +3,56 @@
 <head>
   <title>Grayscale 개발 일지</title>
   <meta charset="utf-8"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <p><a href="index.html">
-    <img src="images/graphic_image.png" width="20%">
-  </a></p>
-  <ol>
-    <li><a href="game_concepts.html">게임 컨셉</a></li>
-    <li><a href="game_system.html">게임 시스템</a></li>
-    <li><a href="object_definitions.html">오브젝트 정의</a></li>
-    <li><a href="item_list.html">아이템 목록</a></li>
-    <li><a href="character_list.html">캐릭터 목록</a></li>
-    <li><a href="attack_list.html">시스템 공격 목록</a></li>
-    <li><a href="log.html">개발 로그</a></li>
-    <li><a href="test.html">테스트</a></li>
-  </ol>
-  <hr>
+  <h1 id="title"><a href="index.html">Grayscale 개발 일지</a></h1>
+  <div id="grid">
+    <div class="nav">
+      <ol>
+        <li><a href="game_concepts.html">게임 컨셉</a></li>
+        <li><a href="game_system.html">게임 시스템</a></li>
+        <li><a href="object_definitions.html">오브젝트 정의</a></li>
+        <li><a href="item_list.html">아이템 목록</a></li>
+        <li><a href="character_list.html">캐릭터 목록</a></li>
+        <li><a href="attack_list.html">시스템 공격 목록</a></li>
+        <li><a href="log.html">개발 로그</a></li>
+        <li><a href="test.html">테스트</a></li>
+      </ol>
+    </div>
+    <div class="article">
+      <h3>DATA</h3>
+      <ul>
+        <li>일정 주기로 화면에 랜덤 생성</li>
+        <li>움직임 없음</li>
+        <li>Player와 충돌 시 파괴됨 -> 데이터량 증가</li>
+      </ul>
 
-  <h3>DATA</h3>
-  <ul>
-    <li>일정 주기로 화면에 랜덤 생성</li>
-    <li>움직임 없음</li>
-    <li>Player와 충돌 시 파괴됨 -> 데이터량 증가</li>
-  </ul>
+      <h3>VACCINE</h3>
+      <ul>
+        <li>일정 주기로 화면에 랜덤 생성</li>
+        <li>등장 시점의 플레이어 위치로 선형 이동</li>
+        <li>Player와 충돌 시 파괴됨 -> 데이터량 감소</li>
+        <li>화면 밖으로 나갈 시 파괴됨</li>
+      </ul>
 
-  <h3>VACCINE</h3>
-  <ul>
-    <li>일정 주기로 화면에 랜덤 생성</li>
-    <li>등장 시점의 플레이어 위치로 선형 이동</li>
-    <li>Player와 충돌 시 파괴됨 -> 데이터량 감소</li>
-    <li>화면 밖으로 나갈 시 파괴됨</li>
-  </ul>
+      <h3>VIRUS(Player)</h3>
+      <ul>
+        <li>게임 시작 시 화면 정가운데 생성</li>
+        <li>플레이어의 터치로 이동</li>
+        <li>중앙 버튼 클릭 시 일정 데이터를 사용해서 능력 발동</li>
+        <li>DATA와 충돌 시 데이터 획득</li>
+        <li>VACCINE과 충돌 시 데이터 감소</li>
+      </ul>
 
-  <h3>VIRUS(Player)</h3>
-  <ul>
-    <li>게임 시작 시 화면 정가운데 생성</li>
-    <li>플레이어의 터치로 이동</li>
-    <li>중앙 버튼 클릭 시 일정 데이터를 사용해서 능력 발동</li>
-    <li>DATA와 충돌 시 데이터 획득</li>
-    <li>VACCINE과 충돌 시 데이터 감소</li>
-  </ul>
-
-  <h3>SYSTEM</h3>
-  <ul>
-    <li>일정 시간마다 플레이어를 공격.</li>
-    <li>공격 전에 공격 범위를 먼저 표시해 줌.</li>
-    <li>공격 종류와 범위는 랜덤</li>
-  </ul>
+      <h3>SYSTEM</h3>
+      <ul>
+        <li>일정 시간마다 플레이어를 공격.</li>
+        <li>공격 전에 공격 범위를 먼저 표시해 줌.</li>
+        <li>공격 종류와 범위는 랜덤</li>
+      </ul>
+    </div>
+  </div>
 
 
   <div id="disqus_thread"></div>

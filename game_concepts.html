@@ -3,29 +3,32 @@
 <head>
   <title>Grayscale 개발 일지</title>
   <meta charset="utf-8"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <p><a href="index.html">
-    <img src="images/graphic_image.png" width="20%">
-  </a></p>
-  <ol>
-    <li><a href="game_concepts.html">게임 컨셉</a></li>
-    <li><a href="game_system.html">게임 시스템</a></li>
-    <li><a href="object_definitions.html">오브젝트 정의</a></li>
-    <li><a href="item_list.html">아이템 목록</a></li>
-    <li><a href="character_list.html">캐릭터 목록</a></li>
-    <li><a href="attack_list.html">시스템 공격 목록</a></li>
-    <li><a href="log.html">개발 로그</a></li>
-    <li><a href="test.html">테스트</a></li>
-  </ol>
-  <hr>
-  <h3>Digital World full of <i>GRAYSCALE</i> objects</h2>
-  <p>흑백의 물체들로 가득차 있는 디지털 세계. 플레이어는 이 미지의 세계에서 배척받는 바이러스입니다.</p>
-  <p>둘러싸오는 백신들과 시스템의 무차별 공격으로부터 살아남기 위해서 주변의 데이터를 흡수하고, 시스템의 결함을 이용하세요!</p>
-  <br>
-  <h3>Collecting data - to defend yourself</h3>
-  <p>데이터를 모아서 바이러스의 능력을 활용, 세계로부터 살아남으세요.</p>
-
+  <h1 id="title"><a href="index.html">Grayscale 개발 일지</a></h1>
+  <div id="grid">
+    <div class="nav">
+      <ol>
+        <li><a href="game_concepts.html">게임 컨셉</a></li>
+        <li><a href="game_system.html">게임 시스템</a></li>
+        <li><a href="object_definitions.html">오브젝트 정의</a></li>
+        <li><a href="item_list.html">아이템 목록</a></li>
+        <li><a href="character_list.html">캐릭터 목록</a></li>
+        <li><a href="attack_list.html">시스템 공격 목록</a></li>
+        <li><a href="log.html">개발 로그</a></li>
+        <li><a href="test.html">테스트</a></li>
+      </ol>
+    </div>
+    <div class="article">
+      <h3>Digital World full of <i>GRAYSCALE</i> objects</h2>
+      <p>흑백의 물체들로 가득차 있는 디지털 세계. 플레이어는 이 미지의 세계에서 배척받는 바이러스입니다.</p>
+      <p>둘러싸오는 백신들과 시스템의 무차별 공격으로부터 살아남기 위해서 주변의 데이터를 흡수하고, 시스템의 결함을 이용하세요!</p>
+      <br>
+      <h3>Collecting data - to defend yourself</h3>
+      <p>데이터를 모아서 바이러스의 능력을 활용, 세계로부터 살아남으세요.</p>
+    </div>
+  </div>
 
   <div id="disqus_thread"></div>
   <script>
@@ -47,7 +50,6 @@
   })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
 
 </body>
 </html>
