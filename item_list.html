@@ -4,49 +4,54 @@
   <title>Grayscale 개발 일지</title>
   <meta charset="utf-8"/>
   <link rel="stylesheet" href="css/style.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/common_settings.js"></script>
 </head>
 <body>
-  <h1 id="title"><a href="index.html">Grayscale Devnote</a></h1>
-  <div id="grid">
-    <div class="nav">
-      <ol>
-        <li><a href="game_concepts.html">게임 컨셉</a></li>
-        <li><a href="game_system.html">게임 시스템</a></li>
-        <li><a href="object_definitions.html">오브젝트 정의</a></li>
-        <li><a href="item_list.html">아이템 목록</a></li>
-        <li><a href="character_list.html">캐릭터 목록</a></li>
-        <li><a href="attack_list.html">시스템 공격 목록</a></li>
-        <li><a href="log.html">개발 로그</a></li>
-        <li><a href="test.html">테스트</a></li>
-      </ol>
-    </div>
-    <div class="article">
-      <h2>Current Item Count : 4</h2>
-
-      <h3>DATA PACKET</h3>
-      <ul>
-        <li>데이터 뭉치. Data가 10개 들어 있다.</li>
-      </ul>
-
-      <h3>CODE OPTIMIZER</h3>
-      <ul>
-        <li>최적화. 5초간 무적</li>
-      </ul>
-
-      <h3>ROUTER</h3>
-      <ul>
-        <li>바이러스 영향 범위 증가 (조금 먼 거리에서도 DATA를 획득할 수 있음)</li>
-      </ul>
-
-      <h3>TIMER INTERRUPT</h3>
-      <ul>
-        <li>플레이어를 제외한 모든 오브젝트의 속도가 절반으로 줄어든다.</li>
-      </ul>
+  <div id="titlewrapper">
+    <div class="title">
+      <h1><a href="index.html">Grayscale Devnote</a></h1>
+      <h2>Created by
+        <a href="https://github.com/soldier4443/" title="Go to github">Tura</a>
+      </h2>
     </div>
   </div>
+  <div id="contentwrapper">
+    <div class="space" id="content_space">
+      <!-- This is used when there's notice -->
+      <p id="notice"></p>
+    </div>
+    <div id="grid">
+      <div class="nav" id="navigation">
+      </div>
+      <div class="article">
+        <h2>Current Item Count : 4</h2>
 
+        <h3>DATA PACKET</h3>
+        <ul>
+          <li>데이터 뭉치. Data가 10개 들어 있다.</li>
+        </ul>
 
-  <div id="disqus_thread"></div>
+        <h3>CODE OPTIMIZER</h3>
+        <ul>
+          <li>최적화. 5초간 무적</li>
+        </ul>
+
+        <h3>ROUTER</h3>
+        <ul>
+          <li>바이러스 영향 범위 증가 (조금 먼 거리에서도 DATA를 획득할 수 있음)</li>
+        </ul>
+
+        <h3>TIMER INTERRUPT</h3>
+        <ul>
+          <li>플레이어를 제외한 모든 오브젝트의 속도가 절반으로 줄어든다.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="disqus_thread"></div>
+  </div>
+
   <script>
 
   /**

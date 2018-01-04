@@ -23,10 +23,12 @@ h3 {
 p, li {
   display: block;
   line-height: 24px;
+  margin:0;
+  padding: 0;
 }
 ul, ol {
   margin:0;
-padding: 0;
+  padding: 0;
 }
 
 .title {
@@ -39,46 +41,76 @@ padding: 0;
 }
 .title h1 {
   font-size:2.5em;
-  border-bottom:1px solid gray;
-  padding-top: 40px;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+  margin:0;
 }
 .title h2 {
   font-weight:normal;
+  margin:0;
 }
-
 .article h3 {
-  border-bottom:1px solid #FF6459;
+  border-bottom:1px solid #CCC;
   padding-bottom:10px;
   margin-bottom:10px;
 }
 .article h3:not(:first-child) {
   margin-top: 40px;
 }
-
+.article p:first-child {
+  margin-top: 20px;
+}
 .nav ol {
   counter-reset:item;
   list-style-type:none;
   margin:0px;
 }
-.nav li {
+.nav a {
+  display:block;
   padding-left: 16px;
   padding-top: 12px;
   padding-bottom: 12px;
-  background-color: #E5E5E5;
+}
+.nav li.active a, .nav li:hover {
+  background-color:#EEE;
+}
+.nav li:active {
+  background-color:#DDD;
 }
 
+#titlewrapper {
+  width: 1000px;
+  margin:0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #EEE;
+  border-left:1px solid #CCC;
+  border-right:1px solid #CCC;
+}
+#contentwrapper {
+  width: 1000px;
+  margin:0 auto;
+  border-left:1px solid #CCC;
+  border-right:1px solid #CCC;
+}
+#content_space {
+  border-bottom:1px solid #CCC;
+}
+#notice {
+  color: #FF6459;
+  font-weight: bold;
+  margin-left: 24px;
+  line-height: 48px;
+}
 #grid {
   display:grid;
   grid-template-columns:200px 1fr;
-  border-bottom:1px solid gray;
+  border-bottom:1px solid #CCC;
 }
 #grid .nav {
-  border-right:1px solid gray;
+  border-right:1px solid #CCC;
 }
 #grid .article {
   padding-left:20px;
+  padding-right:20px;
   padding-bottom:20px;
 }
 #disqus_thread {
@@ -94,6 +126,6 @@ padding: 0;
   }
   #grid .nav {
     border-right:none;
-    border-bottom:1px solid gray;
+    border-bottom:1px solid #CCC;
   }
 }
