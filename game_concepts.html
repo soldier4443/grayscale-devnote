@@ -3,22 +3,21 @@
 <head>
   <title>Grayscale 개발 일지</title>
   <meta charset="utf-8"/>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $('#navigation').load('navigation.html');
+  </script>
 </head>
 <body>
-  <h1 id="title"><a href="index.html">Grayscale 개발 일지</a></h1>
+  <div class="title">
+    <h1><a href="index.html">Grayscale Devnote</a></h1>
+    <h2>Created by
+      <a href="https://github.com/soldier4443/" title="Go to github">Tura</a>
+    </h2>
+  </div>
   <div id="grid">
-    <div class="nav">
-      <ol>
-        <li><a href="game_concepts.html">게임 컨셉</a></li>
-        <li><a href="game_system.html">게임 시스템</a></li>
-        <li><a href="object_definitions.html">오브젝트 정의</a></li>
-        <li><a href="item_list.html">아이템 목록</a></li>
-        <li><a href="character_list.html">캐릭터 목록</a></li>
-        <li><a href="attack_list.html">시스템 공격 목록</a></li>
-        <li><a href="log.html">개발 로그</a></li>
-        <li><a href="test.html">테스트</a></li>
-      </ol>
+    <div class="nav" id="navigation">
     </div>
     <div class="article">
       <h3>Digital World full of <i>GRAYSCALE</i> objects</h2>

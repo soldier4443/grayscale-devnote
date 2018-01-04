@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="colors.js"></script>
+  </head>
+  <body style="background-color:white; color:black;">
+
+    <script type="text/javascript">
+      var book = {
+        "author": "tura",
+        page: 254,
+        showAll: function() {
+          for (var key in this) {
+            if (key === "showAll") continue;
+
+            document.write('<p>' + book[key] + '</p>')
+          }
+        }
+      }
+
+      document.write('<p>' + book['page'] + '</p>')
+      document.write('<p>' + book.author + '</p>')
+
+      book.showAll();
+    </script>
+
+    <input type="button" value="day" onclick="nightDaySwitch(this);">
+
+    <script type="text/javascript">
+      function sum(left, right) {
+        return left + right;
+      }
+
+      document.write('<p>' + sum(2, 3) +'</p>');
+    </script>
+
+    <p>Hello World</p>
+    <p>Hello World</p>
+    <p>Hello World</p>
+    <p>Hello World</p>
+    <p>Hello World</p>
+    <p>Hello World</p>
+    <p>Hello World</p>
+    <p>Hello World</p>
+    <p>Hello World</p>
+    <p>Hello World</p>
+
+    <script type="text/javascript">
+      var coworkers = ['egoing', 'tura'];
+      document.write(coworkers.length);
+      coworkers.push('hello');
+      document.write('<br>');
+      document.write(coworkers.length);
+    </script>
+
+  </body>
+</html>

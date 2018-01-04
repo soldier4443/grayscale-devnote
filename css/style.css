@@ -1,0 +1,99 @@
+@import url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/stylesheets/NotoSansKR-Hestia.css);
+
+body {
+  background-color: #F9F9F9;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  color:#444;
+  font-family: 'Noto Sans Korean', sans-serif;
+  font-size: 14px;
+}
+a {
+  color:#2B3B54;
+  text-decoration:none;
+}
+h3 {
+  color:#2B3B54;
+  font-size: 16px;
+  margin: 20px 0px 20px 0px;
+}
+p, li {
+  display: block;
+  line-height: 24px;
+}
+ul, ol {
+  margin:0;
+padding: 0;
+}
+
+.title {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+.title a {
+  font-weight:bold;
+}
+.title h1 {
+  font-size:2.5em;
+  border-bottom:1px solid gray;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.title h2 {
+  font-weight:normal;
+}
+
+.article h3 {
+  border-bottom:1px solid #FF6459;
+  padding-bottom:10px;
+  margin-bottom:10px;
+}
+.article h3:not(:first-child) {
+  margin-top: 40px;
+}
+
+.nav ol {
+  counter-reset:item;
+  list-style-type:none;
+  margin:0px;
+}
+.nav li {
+  padding-left: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #E5E5E5;
+}
+
+#grid {
+  display:grid;
+  grid-template-columns:200px 1fr;
+  border-bottom:1px solid gray;
+}
+#grid .nav {
+  border-right:1px solid gray;
+}
+#grid .article {
+  padding-left:20px;
+  padding-bottom:20px;
+}
+#disqus_thread {
+  margin:20px;
+}
+
+@media (max-width:800px) {
+  #title {
+    font-size:1.5em;
+  }
+  #grid {
+    display:block;
+  }
+  #grid .nav {
+    border-right:none;
+    border-bottom:1px solid gray;
+  }
+}
