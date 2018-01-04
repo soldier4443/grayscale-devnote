@@ -1,5 +1,8 @@
+@import url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/stylesheets/NotoSansKR-Hestia.css);
+
 body {
   margin:0px;
+  font-family: 'Noto Sans Korean', sans-serif;
 }
 #title {
   margin:0px;
@@ -11,15 +14,43 @@ body {
 #grid {
   display:grid;
   grid-template-columns:200px 1fr;
+  border-bottom:1px solid gray;
 }
 #grid ol {
+  counter-reset:item;
+  list-style-type:none;
   margin:0px;
   padding-top:20px;
   padding-left:40px;
+  padding-bottom:20px;
+}
+#grid li {
+  display: block;
+}
+#grid .nav li::before {
+  content:counter(item) " .. ";
+  counter-increment:item;
 }
 #grid .nav {
   border-right:1px solid gray;
 }
 #grid .article {
-  padding-left: 20px
+  padding-left:20px;
+  padding-bottom:20px;
+}
+#disqus_thread {
+  margin:20px;
+}
+
+@media (max-width:800px) {
+  #title {
+    font-size:1.5em;
+  }
+  #grid {
+    display:block;
+  }
+  #grid .nav {
+    border-right:none;
+    border-bottom:1px solid gray;
+  }
 }
